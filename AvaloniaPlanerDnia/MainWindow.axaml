@@ -8,15 +8,20 @@
         <Grid>
         
                 <StackPanel Orientation="Vertical" Margin="10">
-                        <TextBox x:Name="taskNameTextBox" Width="200" Margin="5" Text="Nazwa zadania" />
+                        <TextBox x:Name="taskNameTextBox" Width="200" Margin="5" />
                         <ComboBox x:Name="categoryComboBox" Width="200" Margin="5">
                                 <ComboBoxItem Content="Praca" />
                                 <ComboBoxItem Content="Relaks" />
                                 <ComboBoxItem Content="Zakupy" />
                         </ComboBox>
-            
-            
-            
+                        <Button Content="Dodaj zadanie" Width="100" Margin="5"/>
                 </StackPanel>
+                
+                <StackPanel x:Name="TaskList" Margin="10,60,10,100">
+                </StackPanel>
+                
+                <TextBlock x:Name="PodsumowanieTextBlock" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10" FontSize="16"/>
+            
+                
         </Grid>
 </Window>
